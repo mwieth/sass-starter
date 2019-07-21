@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: rem($gutter / 2) auto;
+  max-width: rem(1200px);
+
+  @include media (768) {
+    margin: rem($gutter) auto;
+  }
+}
+
+.grid {
+  &-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: rem($gutter / 2) 0;
+
+    @include media (768) {
+      margin: rem($gutter) 0;
+    }
+  }
+
+  &__item {
+    flex: 1;
+    padding: rem($gutter / 2);
+    margin: rem($gutter / 2);
+
+    @include media (768) {
+      margin: rem($gutter);
+    }
+  }
+}
+
+@for $i from 1 through 12 {
+  .grid__item--#{$i} {
+    //width: calc((100% / 12) * #{$i});
+    flex-basis: calc((#{$i} * (100% / 3)) - #{rem($gutter)});
+    //padding: $gutter / 2;
+
+    @include media (768) {
+      flex-basis: calc((#{$i} * (100% / 6)) - #{rem($gutter)});
+    }
+
+    @include media (1024) {
+      flex-basis: calc((#{$i} * (100% / 12)) - #{rem($gutter)});
+    }
+  }
+
+  .grid__item--offset-#{$i} {
+    margin-left: (100% / 3 * $i);
+
+    @include media (768) {
+      flex-basis: calc((#{$i} * (100% / 6)) - #{rem($gutter)});
+    }
+
+    @include media (1024) {
+      flex-basis: calc((#{$i} * (100% / 12)) - #{rem($gutter)});
+    }
+  }
+}

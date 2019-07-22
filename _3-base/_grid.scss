@@ -1,12 +1,15 @@
-.container {
+.grid-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  padding: rem($gutter / 2);
   margin: rem($gutter / 2) auto;
+  width: 100%;
   max-width: rem(1200px);
 
   @include media (768) {
     margin: rem($gutter) auto;
+    padding: rem($gutter);
   }
 }
 
@@ -36,26 +39,25 @@
   .grid__item--#{$i} {
     //width: calc((100% / 12) * #{$i});
     flex-basis: calc((#{$i} * (100% / 3)) - #{rem($gutter)});
-    //padding: $gutter / 2;
 
     @include media (768) {
-      flex-basis: calc((#{$i} * (100% / 6)) - #{rem($gutter)});
+      flex-basis: calc((#{$i} * (100% / 6)) - #{rem($gutter * 2)});
     }
 
     @include media (1024) {
-      flex-basis: calc((#{$i} * (100% / 12)) - #{rem($gutter)});
+      flex-basis: calc((#{$i} * (100% / 12)) - #{rem($gutter * 2)});
     }
   }
 
   .grid__item--offset-#{$i} {
-    margin-left: (100% / 3 * $i);
+    margin-left: calc(#{$i} * (100% / 3) - #{rem($gutter)});
 
     @include media (768) {
-      flex-basis: calc((#{$i} * (100% / 6)) - #{rem($gutter)});
+      margin-left: calc((#{$i} * (100% / 6)) - #{rem($gutter * 2)});
     }
 
     @include media (1024) {
-      flex-basis: calc((#{$i} * (100% / 12)) - #{rem($gutter)});
+      margin-left: calc((#{$i} * (100% / 12)) - #{rem($gutter * 2)});
     }
   }
 }

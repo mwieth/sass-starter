@@ -1,0 +1,61 @@
+@for $i from 1 through 6 {
+  .u-pad--#{$i} {
+    padding: rem(#{$i}) !important;
+  }
+
+  .u-pad-x--#{$i} {
+    padding-left: rem(#{$i}) !important;
+    padding-right: rem(#{$i}) !important;
+  }
+
+  .u-pad-y--#{$i} {
+    padding-top: rem(#{$i}) !important;
+    padding-bottom: rem(#{$i}) !important;
+  }
+
+  .u-pad-t--#{$i} {
+    padding-top: rem(#{$i}) !important;
+  }
+
+  .u-pad-b--#{$i} {
+    padding-bottom: rem(#{$i}) !important;
+  }
+
+  .u-pad-l--#{$i} {
+    padding-left: rem(#{$i}) !important;
+  }
+
+  .u-pad-r--#{$i} {
+    padding-right: rem(#{$i}) !important;
+  }
+
+  .u-mar--#{$i} {
+    margin: rem(#{$i}) !important;
+  }
+
+  .u-mar-x--#{$i} {
+    margin-left: rem(#{$i}) !important;
+    margin-right: rem(#{$i}) !important;
+  }
+
+  .u-mar-y--#{$i} {
+    margin-top: rem(#{$i}) !important;
+    margin-bottom: rem(#{$i}) !important;
+  }
+
+  .u-mar-t--#{$i} {
+    margin-top: rem(#{$i}) !important;
+  }
+
+  .u-mar-b--#{$i} {
+    margin-bottom: rem(#{$i}) !important;
+  }
+
+  .u-mar-l--#{$i} {
+    margin-left: rem(#{$i}) !important;
+  }
+
+  .u-mar-r--#{$i} {
+    margin-right: rem(#{$i}) !important;
+  }
+}

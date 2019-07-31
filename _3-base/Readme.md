@@ -1,1 +1,1 @@
-Basic 'scaffolding' styles
+Contains basic layout/scaffolding styles. 

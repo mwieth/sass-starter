@@ -1,2 +1,1 @@
-Colors Map
-Breakpoint Variables
+Contains basic functions and mixins

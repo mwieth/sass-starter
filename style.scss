@@ -12,12 +12,10 @@
 
 // first import normalize styles then our own
 @import '_3-base/normalize';
-@import '_3-base/grid';
 @import '_3-base/base';
-@import '_3-base/typography';
 
 // import component styles here
-// @import '_4-base/component-name';
+// @import '_4-components/component-name';
 
 //import utilities
 @import '_5-utilities/flex';

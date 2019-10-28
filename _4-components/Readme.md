@@ -1,1 +1,1 @@
-Directory for components.
+Directory for component styles.

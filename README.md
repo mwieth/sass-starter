@@ -1,10 +1,10 @@
 # Sass-starter
 
-A small setup of sass style files to help you speed up your development time.
-Attention: Only contains style files (*.scss) not a build process/pipeline which compiles scss to css.
+A basic setup of sass style files to help you speed up your development time.
+Attention: Only contains sass files (*.scss) not a build process/pipeline which compiles scss to css.
 
-1. Setup
-2. Structure
+1. **[Setup](#Setup)**<br>
+2. **[Structure](#Structure)**
 
 ## Setup
 
@@ -18,10 +18,10 @@ Attention: Only contains style files (*.scss) not a build process/pipeline which
   .
   ├── _1-variables                 # Contains variables
   ├── _2-mixins                    # Mixins and functions
-  ├── _3-base                      # Basic structure and layout styles
+  ├── _3-base                      # Basic structure and normalize.css
   ├── _4-components                # Component styles directory
   ├── _5-utilities                 # Utility classes
-  ├── LICENSE
+  ├── style.scss
   └── README.md
 ```
 
